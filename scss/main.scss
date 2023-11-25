@@ -1,0 +1,78 @@
+@use "layout" as *;
+@use "pages" as *;
+@use "themes" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 83px;
+}
+
+::-webkit-scrollbar {
+  background-color: #aaa;
+  width: 9px;
+  &:hover {
+    background-color: #696969;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $color-one;
+  border-radius: 8px;
+  transition: 0.5s;
+  &:hover {
+    background-color: #9a9999;
+  }
+}
+
+.dark header {
+  background-color: #555;
+}
+
+@media only screen and (max-width: 999px) {
+  .dark header nav .nav_items .nav-items {
+    background-color: #333333d0;
+  }
+}
+
+.dark .logo svg {
+  fill: #000;
+}
+
+.dark {
+  background-color: #888 !important;
+}
+
+.dark .hero__home__home {
+  background-color: #888 !important;
+}
+
+.dark main .hero__home {
+  background-color: #777 !important;
+}
+
+.dark {
+  color: #fff !important;
+}
+
+// .dark a {
+//   color: #000;
+// }
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

@@ -1,0 +1,254 @@
+.career-main-section {
+    font-family: Poppins;
+    .career-hero-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 24px;
+        margin: 96px 0;
+        span {
+            color: var(--Black, #232536);
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px; /* 142.857% */
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        h2 {
+            color: var(--Black, #232536);
+            text-align: center;
+            /* H2 Heading */
+            font-family: Poppins;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 58px; /* 120.833% */
+            max-width: 624px;
+            width: 100%;
+        }
+        p {
+            color: var(--Black, #232536);
+            text-align: center;
+            /* Paragraph */
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            max-width: 624px;
+            width: 100%;
+        }
+        .text-image {
+            h1 {
+                max-width: 835.6px;
+                width: 100%;
+                height: auto;
+                font-weight: 900px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 200px;
+                background-image: url(../../images/Shahboz/Career-bg.png);
+                background-clip: text;
+                background-size: cover;
+                color: transparent;
+                
+            }
+        }
+    }
+}
+
+
+// OPEN POSITION SECTION /////////////////////
+
+.position-content {
+    background: #ECF8F9;
+    max-width: 1280px;
+    width: 100%;
+    // height: 949px;
+    flex-shrink: 0;
+    margin-bottom: 96px;
+    .position-cards {
+        display: flex;
+        flex-wrap: wrap;
+        // padding: 78px 0 0 78px;
+        padding-top: 78px;
+        padding-bottom: 78px;
+        justify-content: center;
+        gap: 32px;
+        .p-card {
+            max-width: 354px;
+            width: 100%;
+            height: 243px;
+            flex-shrink: 0;
+            background: #fff;
+            padding: 48px 0 0 48px; 
+            h6 {
+                color: var(--Black, #232536);
+                /* H6 Heading */
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px; /* 175% */
+                margin-bottom: 8px;
+            }
+            p {
+                color: var(--Black, #232536);
+                opacity: 0.6;
+                /* Paragraph */
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 150% */
+            }
+            p:nth-child(3) {
+                margin-bottom: 52px;
+            }
+            a {
+                color: var(--iris-100, #5D5FEF);
+                /* Text link */
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px; /* 150% */
+                display: flex;
+                gap: 12px;
+                align-items: center;
+                svg {
+                    fill: #5D5FEF;
+                }
+            }
+            a:hover {
+                color: #ffd467;
+                svg {
+                    fill: #ffd467;
+                    transition: 0.5s;
+                }
+                transition: 0.5s;
+            }
+
+        }
+        .p-card:hover {
+            box-shadow: 1px 1px 10px 1px #5D5FEF;
+            transition: 0.5s;
+            border-radius: 15px;
+
+        }
+    }
+}
+
+
+// WOEK AND CULTURE SECTION /////////////////////
+
+.work-and-culture-section {
+    background: #FAFAFC;
+    // height: 884px;
+    .work-and-culture-content {
+        padding: 96px 0;
+        span {
+            color: #000;
+            opacity: 0.87;
+            /* Caption */
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px; /* 142.857% */
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        h3 {
+            color: #232536;
+            max-width: 624px;
+            width: 100%;
+            /* H3 Heading */
+            font-family: Poppins;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 54px; /* 150% */
+            margin: 16px 0 24px 0;
+        }
+        p {
+            color: #232536;
+            opacity: 0.6;
+            /* Paragraph */
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            max-width: 624px;
+            width: 100%;
+            margin-bottom: 64px;
+        }
+        .w-c-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            .wc-card {
+                max-width: 418px;
+                width: 100%;
+                height: 200px;
+                flex-shrink: 0;
+                background: #fff;
+                padding: 32px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 8px;
+            }
+            .wc-card:hover {
+                box-shadow: 1px 1px 20px 1px #ffd467;
+                transition: 0.5s;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .career-main-section {
+        .work-and-culture-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+            span {
+                text-align: center;
+                margin: 0 auto;
+            }
+            h3 {
+                text-align: center;
+                margin: 0 auto;
+            }
+            p {
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+        .wc-card {
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .career-main-section {
+        h3{
+            font-size: 28px !important;
+        }
+        h2 {
+            font-size: 32px !important;
+            line-height: 8px;
+        }
+        
+    }
+}
